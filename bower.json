@@ -1,0 +1,22 @@
+{
+  "name": "PythonDataWeb",
+  "homepage": "https://github.com/jy03297329/PythonDataWeb",
+  "authors": [
+    "Yuanzheng Chang <hjcyz1991@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.py",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "d3": "^3.5.16"
+  }
+}
