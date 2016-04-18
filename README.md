@@ -5,7 +5,8 @@ Flask,
 Bower,
 D3,
 Requests,
-JQuery
+JQuery,
+Datatables
 
 Usage:
 python app.py then the page can be viewed at http://localhost:5000/
