@@ -6,7 +6,8 @@ Bower,
 D3,
 Requests,
 JQuery,
-Datatables
+Datatables,
+Jinja
 
 Usage:
 python app.py then the page can be viewed at http://localhost:5000/
