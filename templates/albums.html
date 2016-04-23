@@ -1,0 +1,52 @@
+{% extends "header.html" %}
+{% block body %}
+<div class="container-fluid" style="min-height: 100%">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-tabs ">
+        <li role="presentation"><a href="/">Movies</a></li>
+        <li role="presentation" class="active"><a href="/albums">Music Albums</a></li>
+        <li role="presentation"><a href="/geographical">Geographical</a></li>
+      </ul>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="container" style="width:100%">
+            <br>
+            <div id="fulltable_wrapper" class="dataTables_wrapper no-footer">
+              <div id="fulltable_filter" class="dataTables_filter">
+                <label>
+                  Search: 
+                  <input type="search" class placebolder aria-controls="fulltable">
+                </label>
+              </div>
+            <table id="fulltable" class="table table-hover dataTable no-footer" cellspacing="0" role="grid" aria-describedby="fulltable_info">
+              <thead>
+                <tr role="row">
+                  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 150px;">Movie name</th>
+                  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 150px;">All Volume of Mentions</th>
+                  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 150px;">Overall Sentiment</th>
+                  <th>{{ data }}</th>
+                </tr>
+              </thead>
+            </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>  
+      </div>  
+    </div>
+      <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+
+      </div>
+  </div>
+  
+  <div class="container">
+    <div id="chart"></div>
+  </div>
+</div>
+      
+{% endblock %}

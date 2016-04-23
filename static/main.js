@@ -38,7 +38,7 @@ function createGraph() {
   .text("tooltip");
 
   //request the data
-  d3.json("/data", function(error, quotes) {
+  d3.json("/json_data", function(error, quotes) {
   console.log(quotes)
   var node = svg.selectAll('.node')
     .data(bubble.nodes(quotes)

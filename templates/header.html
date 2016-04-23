@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4751PythonProject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href={{ url_for('static', filename='./bower_components/bootstrap/dist/css/bootstrap.min.css') }} rel="stylesheet" media="screen">
+  <link href={{ url_for('static', filename='main.css') }} rel="stylesheet" media="screen">
+  <link href={{ url_for('static', filename='temp.css') }} rel="stylesheet" media="screen">
+  <link href={{ url_for('static', filename='./bower_components/nvd3/build/nv.d3.css') }} rel="stylesheet" media="screen">
+  <script src={{ url_for('static', filename='./bower_components/jquery/dist/jquery.min.js') }}></script>
+  <script src={{ url_for('static', filename='./bower_components/bootstrap/dist/js/bootstrap.min.js') }}></script>
+  <script src={{ url_for('static', filename='./bower_components/d3/d3.min.js') }}></script>
+  <script src={{ url_for('static', filename='./bower_components/nvd3/build/nv.d3.js') }}></script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="//cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script src={{ url_for('static', filename='./bower_components/highcharts/highstock.js') }}></script>
+  <script src={{ url_for('static', filename='./bower_components/highcharts/modules/exporting.js') }}></script>
+  <script src={{ url_for('static', filename='highcharts.js') }}></script>
+  
+</head>
+<body style="min-height:100%;" class="body">
+    <header>
+      <div class="page-header">
+        <h2>Sentimental Analysis on Entertainment Industry </h2>
+      </div>
+    </header>
+      {% block body %}
+      {% endblock %}   
+    <div class="footer_container" style="background-color: #ececec">
+      <div class="boarder-row" style="width:100%; margin-botton: 15px;"></div>
+        <footer id="footer">
+          <strong>A Columbia University IEORE4571 Project by</strong>
+          <div class="row">
+            <ul>
+              <li>Jiaming Liu (jl4564)</li>
+              <li>Jungbeom Lee (jl4604)</li>
+              <li>Mengjin Sun (ms5133)</li>
+              <li>Jonny Chen (pc2716)</li>
+              <li>Yi Yu (yy2631)</li>
+              <li>Yuanzheng Chang (yc3099)</li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+  </body>
+  <script type=text/javascript>
+  $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+  </script>
+  <script type="text/javascript">
+    // $(document).ready(function() {
+    //   var table = $('#main_table').DataTable();
+    //   $('#main_table tbody').on( 'click', 'tr', function () {
+    //     if ( $(this).hasClass('selected') ) {
+    //         $(this).removeClass('selected');
+
+    //     }
+    //     else {
+    //         table.$('tr.selected').removeClass('selected');
+    //         $(this).addClass('selected');
+    //     $.getJSON($SCRIPT_ROOT + '/', {
+    //       movie: (table.row(this).data()[0])
+    //     }, function(data) {
+          
+    //     });
+    //     console.log($('td[name="movie"]'))
+    //         console.log( table.row( this ).data()[0]);
+
+    //         console.log($(this));
+    //     }
+    //   } );
+    // } );
+  </script>
+</html>
