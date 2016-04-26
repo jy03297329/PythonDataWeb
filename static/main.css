@@ -1,7 +1,38 @@
-h2 {
-	padding-bottom: 20px;
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/*html {
+	background-color: #2a2a2b
+}*/
+header {
+	font-family: 'Lato', sans-serif;
+	/*color: #ED760E;*/ /*orange*/
+	/*background-color: #2a2a2b; /*darkgrey*/*/
+
 }
-.page-header {
-	padding-bottom: 0px;
-	margin: 0px 0px 5px;
+footer {
+	font-family: 'Lato', sans-serif;
+	/*color: #ED760E;*/
+	/*background-color: #2a2a2b*/
 }
+body {
+  	font-family: 'Lato', sans-serif;
+	/*color: #E0E0E3;
+	background-color: #2a2a2b*/
+}
+/*
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}*/

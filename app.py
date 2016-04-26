@@ -12,7 +12,6 @@ from json_data import get_json_data
 
 test = data()
 test1 = get_json_data()
-name = "abcdef"
 
 #print(data)
 
@@ -21,7 +20,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
 	data = get_json_data()
-	return render_template("index.html", data = test1, name = name)
+	return render_template("index.html", data = test1)
 
 # @app.route("/albums")
 # def album():

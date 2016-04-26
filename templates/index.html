@@ -13,12 +13,13 @@
           <div class="container" style="width:100%">
             <br>
             <div id="fulltable_wrapper" class="dataTables_wrapper no-footer">
-              <table id="main_table" class="display" cellspacing="0" width="100%">
+              <table id="main_table" class="display" cellspacing="0" width="100%" table-striped>
                 <thead>
                   <tr>
                     <th>Movie name</th>
                     <th>All volume of mentions</th>
                     <th>Overall Sentiment</th>
+                    <th>Predicted Sales</th>
                   </tr>
                 </thead>
                 <tfoot>
@@ -26,14 +27,16 @@
                     <th>Movie name</th>
                     <th>All volume of mentions</th>
                     <th>Overall Sentiment</th>
+                    <th>Predicted Sales</th>
                   </tr>
                 </tfoot>
                 <tbody>
-                  {% for i in data['data']%}
+                  {% for i in data[0]%}
                     <tr id={{i[0]}}>
                       <td>{{i[0]}}</td>
-                      <td name="volume">{{i[1]}}</td>
-                      <td name="sentiment">{{i[1]}}</td>
+                      <td>{{i[1]}}</td>
+                      <td>{{i[1]}}</td>
+                      <td>{{i[1]}}</td>
                     </tr>
                   {% endfor %}
                 </tbody>
@@ -46,9 +49,10 @@
           <div class="row-md-2">
             <div id='sentiment_chart'></div>
           </div>
-          <div class="row-md-2">{{name}}
+          <div class="row-md-2">
+            <div id='sale_chart'></div>
           </div>
-          <div class="row-md-2">def
+          <div class="row-md-2">
           </div>
         </div>  
       </div>  
