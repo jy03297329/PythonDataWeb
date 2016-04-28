@@ -38,6 +38,7 @@ $(function () {
                   movie: (table.row(this).data()[0])
               }, function(data) {
                   options.series[0].data = data['series'][0][1];
+                  options.series[1].data = data['series'][0][1];
                   // options.chart.renderTo = 'sale_chart'
                   title = "X"
                   title = "Sentiment Score and Sales for " + title
@@ -50,6 +51,7 @@ $(function () {
 
         $.getJSON('/json_data', function(data) {
             options.series[0].data = data['series'][0][1];
+            options.series[1].data = data['series'][0][1];
             console.log(data['series'][0]['data'])
             var chart = new Highcharts.Chart(options);
         });

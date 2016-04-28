@@ -17,26 +17,29 @@
                 <thead>
                   <tr>
                     <th>Movie name</th>
-                    <th>All volume of mentions</th>
+                    <th>All volume of reviews</th>
                     <th>Overall Sentiment</th>
+                    <th>Total Sales</th>
                     <th>Predicted Sales</th>
                   </tr>
                 </thead>
                 <tfoot>
                   <tr>
                     <th>Movie name</th>
-                    <th>All volume of mentions</th>
+                    <th>All volume of reviews</th>
                     <th>Overall Sentiment</th>
+                    <th>Total Sales</th>
                     <th>Predicted Sales</th>
                   </tr>
                 </tfoot>
                 <tbody>
-                  {% for i in data[0]%}
-                    <tr id={{i[0]}}>
-                      <td>{{i[0]}}</td>
-                      <td>{{i[1]}}</td>
-                      <td>{{i[1]}}</td>
-                      <td>{{i[1]}}</td>
+                  {% for i in data%}
+                    <tr id={{i['name']}}>
+                      <td>{{i['name']}}</td>
+                      <td>{{i['volume']}}</td>
+                      <td>{{i['sentiment']}}</td>
+                      <td>{{i['total_sales']}}</td>
+                      <td>{{i['sales']}}</td>
                     </tr>
                   {% endfor %}
                 </tbody>
@@ -57,12 +60,6 @@
         </div>  
       </div>  
     </div>
-      <div class="row">
-        <div class="col-lg-3">
-
-        </div>
-
-      </div>
   </div>
   
   <div class="container">
